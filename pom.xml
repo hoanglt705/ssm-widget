@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.s3s.ssm</groupId>
 	<artifactId>ssm-widget</artifactId>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 	<name>SuperSalesManagement Widget module</name>
 	<description>Module widget of super sales management.</description>	
@@ -19,8 +19,6 @@
 		<commons-io.version>2.4</commons-io.version>
 		<jide-oss.version>3.6.18</jide-oss.version>
 		<softsmithy.version>0.9</softsmithy.version>
-		<myMavenRepo.read.url>https://mymavenrepo.com/repo/0gYeR1uVbGBd8IBUlAOb/</myMavenRepo.read.url>
-		<myMavenRepo.write.url>https://mymavenrepo.com/repo/EsiHd95I3nhSKhiViDip/</myMavenRepo.write.url>
 	</properties>
 	
 	<repositories>
@@ -123,22 +121,19 @@
 			<version>${softsmithy.version}</version>
 		</dependency>
 		<dependency>
-		  <groupId>com.oracle</groupId>
+		  <groupId>com.oracle.javafx</groupId>
 		  <artifactId>javafx</artifactId>
-		  <version>2.0</version>
+		  <version>2.2</version>
 		  <scope>system</scope>
 		  <systemPath>${project.basedir}/libs/jfxrt.jar</systemPath>
 		</dependency>
 	</dependencies>
 	
 	<distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>${myMavenRepo.write.url}</url>
-        </repository>
-        <snapshotRepository>
-            <id>myMavenRepo.write</id>
-            <url>${myMavenRepo.write.url}</url>
-        </snapshotRepository>
-    </distributionManagement>
+	    <repository>
+	      <id>ssm</id>
+	      <name>Internal Snapshot Repository</name>
+	      <url>http://52.193.209.175/repository/snapshots</url>
+	    </repository>
+	  </distributionManagement>
 </project>
