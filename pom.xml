@@ -16,7 +16,7 @@
 		<miglayout.version>3.7.4</miglayout.version>
 		<commons-collections4.version>4.2</commons-collections4.version>
 		<commons-lang.version>2.5</commons-lang.version>
-		<commons-io.version>2.4</commons-io.version>
+		<commons-io.version>2.7</commons-io.version>
 		<jide-oss.version>3.6.18</jide-oss.version>
 		<softsmithy.version>0.9</softsmithy.version>
 		<myMavenRepo.read.url>https://mymavenrepo.com/repo/0gYeR1uVbGBd8IBUlAOb/</myMavenRepo.read.url>
